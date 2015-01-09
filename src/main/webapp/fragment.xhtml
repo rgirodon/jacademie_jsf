@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"    
+       xmlns:ui="http://java.sun.com/jsf/facelets" 
+       xmlns:h="http://java.sun.com/jsf/html">
+
+  <h:head>
+  </h:head>
+  <h:body>
+  	
+  	<div id="header">
+    This text will be included.
+	</div>
+    
+	<ui:fragment rendered="#{myController.displayHelloWorld}">
+        <div id="message">
+            Hello World !
+        </div>
+    </ui:fragment>
+	
+	<div id="footer">
+    This text will be included.
+	</div>
+	
+  </h:body>
+
+</html>
