@@ -11,7 +11,9 @@ public class FormHelloWorld {
 	
 	private String firstName;
 	
-	private String surName;
+	private String lastName;
+	
+	private Integer age;
 
 	public FormHelloWorld() {
 		super();
@@ -25,7 +27,7 @@ public class FormHelloWorld {
 	}
 	
 	public String getMessage() {
-		return "Hello " + this.getFirstName() + " " + this.getSurName() + " ! ";
+		return "Hello " + this.getFirstName() + " " + this.getLastName() + " [" + this.getAge() + "] ! ";
 	}
 
 	public String getFirstName() {
@@ -36,11 +38,19 @@ public class FormHelloWorld {
 		this.firstName = firstName;
 	}
 
-	public String getSurName() {
-		return surName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setSurName(String surName) {
-		this.surName = surName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}	
 }

@@ -7,9 +7,11 @@
 <h:body>
 	<h2>JSF 2.0 Hello World Example - formHello.xhtml</h2>
 	<h:form>
-		Nom : <h:inputText value="#{formHelloWorld.surName}"></h:inputText>
+		Nom : <h:inputText value="#{formHelloWorld.lastName}"></h:inputText>
 		<br/>
 		Prenom : <h:inputText value="#{formHelloWorld.firstName}"></h:inputText>
+		<br/>
+		Age : <h:inputText value="#{formHelloWorld.age}"></h:inputText>
 		<br/>
 		<h:commandButton value="Bienvenue" action="#{formHelloWorld.sayHello}"></h:commandButton>
 	</h:form>
